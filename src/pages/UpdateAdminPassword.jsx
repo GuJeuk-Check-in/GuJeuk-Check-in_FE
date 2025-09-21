@@ -1,6 +1,6 @@
-import LabeledInput from '../components/PasswordUpdateForm/LabeledInput';
+import LabeledInput from '../components/LabeledInput';
 import Button from '../components/Button';
-import PasswordForm from '../components/PasswordUpdateForm/PasswordForm';
+import PasswordForm from '../components/PasswordForm';
 import { useState } from 'react';
 import styled from '@emotion/styled';
 import { IoIosArrowBack } from 'react-icons/io';
@@ -44,7 +44,6 @@ const UpdatePassword = () => {
 export default UpdatePassword;
 
 const Title = styled.h2`
-  text-align: center;
   color: #2e2e32;
   margin-bottom: 30px;
   font-size: 32px;
