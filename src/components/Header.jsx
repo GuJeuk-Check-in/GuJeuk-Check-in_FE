@@ -12,8 +12,9 @@ export default Header;
 
 const Container = styled.div`
   background-color: #95d5f8;
-  width: 1240px;
+  width: 100%;
   height: 165px;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   padding-left: 50px;
