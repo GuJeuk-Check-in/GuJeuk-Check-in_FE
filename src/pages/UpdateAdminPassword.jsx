@@ -1,5 +1,5 @@
 import LabeledInput from '../components/LabeledInput';
-import Button from '../components/Button';
+import Button from '../components/Button/Button';
 import PasswordForm from '../components/PasswordForm';
 import { useState } from 'react';
 import styled from '@emotion/styled';

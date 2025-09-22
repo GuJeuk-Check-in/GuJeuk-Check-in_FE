@@ -1,6 +1,6 @@
 import LabeledInput from '../components/LabeledInput';
 import PasswordForm from '../components/PasswordForm';
-import Button from '../components/Button';
+import Button from '../components/Button/Button';
 import styled from '@emotion/styled';
 import { useState } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
