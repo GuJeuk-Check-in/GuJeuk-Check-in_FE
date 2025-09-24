@@ -10,7 +10,7 @@ const EnterAdminPassword = () => {
   const navigate = useNavigate();
 
   const handleChangePasswordClick = () => {
-    navigate('./pages/UpdateAdminPassword');
+    navigate('/update-password');
   };
   return (
     <PasswordForm width="499px" height="400px">
@@ -43,5 +43,6 @@ const ChangePW = styled.button`
   font-size: 16px;
   background: none;
   margin-top: 12px;
+  margin-left: 130px;
   cursor: pointer;
 `;
