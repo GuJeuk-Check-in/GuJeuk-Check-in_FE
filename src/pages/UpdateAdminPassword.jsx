@@ -4,11 +4,14 @@ import PasswordForm from '../components/PasswordForm';
 import { useState } from 'react';
 import styled from '@emotion/styled';
 import { IoIosArrowBack } from 'react-icons/io';
+import { useNavigate } from 'react-router-dom';
 
 const UpdatePassword = () => {
   const [currentPW, setCurrentPW] = useState('');
   const [newPW, setNewPW] = useState('');
   const [confirmPW, setConfirmPW] = useState('');
+
+  const navigate = useNavigate();
 
   return (
     <>
