@@ -1,5 +1,5 @@
 import { Global, css } from '@emotion/react';
-import UpdatePassword from './pages/UpdateAdminPassword';
+import Router from './router';
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
           body {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
             background-image: linear-gradient(
                 to right,
                 #ebebeb 1px,
@@ -19,7 +20,7 @@ function App() {
           }
         `}
       />
-      <UpdatePassword />
+      <Router />
     </>
   );
 }
