@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
-import { useState } from 'react';
+import { useId, useState } from 'react';
 import { FaEyeSlash } from 'react-icons/fa';
 import { IoEyeSharp } from 'react-icons/io5';
 
 const LabeledInput = ({ label = '', placeholder, value, onChange }) => {
   const [showPW, setShowPW] = useState(false);
-  const id = label.replace(/\s/g, '-');
+  const id = useId();
 
   return (
     <InputContainer>
