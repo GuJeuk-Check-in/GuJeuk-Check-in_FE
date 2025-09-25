@@ -62,7 +62,4 @@ const IconButton = styled.button`
   cursor: pointer;
   font-size: 24px;
   color: #666;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;

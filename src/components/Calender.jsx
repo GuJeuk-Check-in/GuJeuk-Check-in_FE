@@ -17,25 +17,13 @@ const CalendarWrapper = styled.div`
   }
 
   .react-calendar__tile--active {
-    background: #ff6f61 !important;
+    background: #95d5f8 !important;
     color: white;
     border-radius: 8px;
   }
 
   .react-calendar__tile:enabled:hover {
-    background: #f0f0f0; /* hover 효과 */
+    background: #f0f0f0;
     border-radius: 8px;
   }
 `;
-
-function CalendarComponent() {
-  const [date, setDate] = useState(new Date());
-
-  return (
-    <CalendarWrapper>
-      <Calendar onChange={setDate} value={date} />
-    </CalendarWrapper>
-  );
-}
-
-export default CalendarComponent;
