@@ -1,13 +1,20 @@
-/** @jsxImportSource @emotion/react */
-import { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import styled from '@emotion/styled';
 
+const CalendarComponent = ({ date, setDate }) => {
+  return (
+    <CalendarWrapper>
+      <Calendar onChange={setDate} value={date} />
+    </CalendarWrapper>
+  );
+};
+
+export default CalendarComponent;
+
 const CalendarWrapper = styled.div`
   .react-calendar {
     border: none;
-    font-family: 'Pretendard', sans-serif;
   }
 
   .react-calendar__tile--now {
