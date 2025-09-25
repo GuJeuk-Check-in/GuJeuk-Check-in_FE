@@ -13,9 +13,13 @@ const UpdatePassword = () => {
 
   const navigate = useNavigate();
 
+  const handleChangePasswordClick = () => {
+    navigate('/');
+  };
+
   return (
     <>
-      <BackBtn>
+      <BackBtn onClick={() => navigate('/')}>
         <IoIosArrowBack />
       </BackBtn>
       <PasswordForm>
@@ -38,7 +42,7 @@ const UpdatePassword = () => {
           value={confirmPW}
           onChange={(e) => setConfirmPW(e.target.value)}
         />
-        <Button>변경</Button>
+        <Button onClick={handleChangePasswordClick}>변경</Button>
       </PasswordForm>
     </>
   );

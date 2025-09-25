@@ -30,12 +30,14 @@ const UseList = () => {
         useName="윤지원"
         maleCount="3"
         femaleCount="1"
+        onClick={handleCardClick}
       ></UseCard>
       <UseCard
         date="2025년 11월 13일"
         useName="박태수"
         maleCount="3"
         femaleCount="1"
+        onClick={handleCardClick}
       ></UseCard>
     </>
   );

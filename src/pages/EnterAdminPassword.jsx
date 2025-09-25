@@ -3,7 +3,7 @@ import PasswordForm from '../components/PasswordForm';
 import Button from '../components/Button/Button';
 import styled from '@emotion/styled';
 import { useState } from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const EnterAdminPassword = () => {
   const [currentPW, setCurrentPW] = useState('');
@@ -12,6 +12,11 @@ const EnterAdminPassword = () => {
   const handleChangePasswordClick = () => {
     navigate('/update-password');
   };
+
+  const handleConfirmClick = () => {
+    navigate('/use-list');
+  };
+
   return (
     <PasswordForm width="499px" height="400px">
       <Title>관리자 비밀번호 입력</Title>
@@ -21,7 +26,7 @@ const EnterAdminPassword = () => {
         value={currentPW}
         onChange={(e) => setCurrentPW(e.target.value)}
       />
-      <Button>확인</Button>
+      <Button onClick={handleConfirmClick}>확인</Button>
       <ChangePW onClick={handleChangePasswordClick}>비밀번호 변경</ChangePW>
     </PasswordForm>
   );
