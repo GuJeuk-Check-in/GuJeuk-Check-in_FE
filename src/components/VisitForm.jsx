@@ -10,7 +10,6 @@ const VisitForm = () => {
   const [maleCount, setMaleCount] = useState(0);
   const [femaleCount, setFemaleCount] = useState(0);
   const [consent, setConsent] = useState(false);
-  // const [date, setDate] = useState('');
   const [date, setDate] = useState(new Date());
 
   const ageGroup = ['미취학아동', '초등학생', '중학생', '고등학생', '성인'];
@@ -114,15 +113,9 @@ const VisitForm = () => {
       <FormRow>
         <Label>방문 날짜 :</Label>
         <CalendarComponent date={date} setDate={setDate} />
-        {/* <Input
-          type="date"
-          placeholder="0000-00-00"
-          value={date}
-          onChange={(e) => setDate(e.target.value)}
-        /> */}
       </FormRow>
 
-      <SubmitBtn>추가</SubmitBtn>
+      <SubmitBtn>수정 완료</SubmitBtn>
     </Container>
   );
 };
