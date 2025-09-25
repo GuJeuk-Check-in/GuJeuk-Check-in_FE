@@ -1,12 +1,10 @@
 import styled from '@emotion/styled';
 
-const Button = ({ children }) => {
-  return (
-    <Container>
-      <Btn>{children}</Btn>
-    </Container>
-  );
-};
+const Button = ({ children, onClick }) => (
+  <Container>
+    <Btn onClick={onClick}>{children}</Btn>
+  </Container>
+);
 
 export default Button;
 
