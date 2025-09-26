@@ -1,12 +1,9 @@
-import { useState } from 'react';
 import styled from '@emotion/styled';
 import { RiDeleteBin5Line } from 'react-icons/ri';
-import { Link } from 'react-router-dom';
 
-const UseCard = ({ date, useName, maleCount, femaleCount }) => {
-  const [alertOpen, setAlertOpen] = useState(false);
+const UseCard = ({ date, useName, maleCount, femaleCount, onClick }) => {
   return (
-    <Container>
+    <Container onClick={onClick}>
       <Section>
         <Date>{date}</Date>
         <BottomLine>
@@ -16,7 +13,7 @@ const UseCard = ({ date, useName, maleCount, femaleCount }) => {
           </VisitorCount>
         </BottomLine>
       </Section>
-      <DeleteIcon onClick={() => setAlertOpen(true)}>
+      <DeleteIcon>
         <RiDeleteBin5Line />
       </DeleteIcon>
     </Container>
